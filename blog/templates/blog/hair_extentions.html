@@ -1,0 +1,1011 @@
+{% load staticfiles %}
+<html>
+
+<head>
+<title>Extentions</title>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+</head>
+
+
+<body>
+
+<header class="bgimage">
+    <div class="container">
+	    <div class="titled hidden-xs">
+	    
+	    </div>
+	</div>
+</header>
+
+
+
+<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="80">
+    <div class="container">
+	    <div class="navbar-header">
+		    <button type="button"
+			class="navbar-toggle collapsed"
+			data-toggle="collapse"
+			data-target="#collapsedmenu"
+			aria-expanded="false">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
+	        <a href="#" class="navbar-brand">
+		       <i>The Glamour Lounge</i>
+		    </a>
+		</div>
+		<div class="collapse navbar-collapse" id="collapsedmenu"> 
+		    <ul class="nav navbar-nav">
+		        <li><a href="{% url 'post_list' %}">Home</a></li>
+			    <li  class="active"><a href="{% url 'hair_extentions' %}">Hair Extentions</a></li>
+			    <li><a href="{% url 'make_up' %}">Make up</a></li>
+				<li><a href="{% url 'lashes_brows' %}">Brows & Lashes</a></li>
+				<li><a href="{% url 'nails' %}">Nails</a></li>
+				<li><a href="{% url 'hairdressing' %}">Hairdressing</a></li>
+				<li><a href="{% url 'price_list' %}">Price List</a></li>
+				<li><a href="{% url 'contact' %}">Contact</a></li>
+		    </ul>
+		</div>
+	</div>
+</nav>
+
+
+    <div class="container" id="wrapper">   	
+		<h2 id="fonted"><i> &nbsp;&nbsp; Hair Extentions</i></h2>
+        <div class="jumbotron">
+		    <div class="container">
+	            <p> <i>
+		            <h3>Hair Extensions Quality - What's the difference </h3>
+		            
+					Remy Hair does not always mean virgin hair, in fact it rarely means that. Although the two terms are used synonymously,
+					they are completely different in meanings. Virgin hair refers to hair that is completely unprocessed, and intact.
+					To qualify as virgin hair, it must meet rigorous standards including: not been permed, dyed, colored, bleached,
+					and chemically processed in any way. This also means it comes from a single donor, and all the cuticles are intact,
+					running in the same direction. Virgin hair can last up to a year with proper care and maintenance.
+					When it comes to virgin Indian hair, you have to care for your extensions just like your own natural hair.
+					You need to brush your hair frequently. You need to shampoo and condition your hair regularly,
+					especially if you use a lot of hair products. Deposits from the hair products, if not washed off on a regular basis,
+					can degrade the quality of the hair (just like your own hair) and combined with the use of heat can affect
+					the smooth natural feeling and behavior of the virgin hair. If you maintain your virgin hair extensions properly,
+					you will have sleek, smooth, tangle free beautiful natural looking hair for a very long time and will be able
+					the reuse the hair many times after. Remy Hair is probably the most misunderstood and overused phrase in the
+					hair industry. Remy human hair consists of hair extensions made from virgin human hair of the highest quality grade
+					that has been chemically treated (dyed). Also, all hair strands must follow the same direction and be of the same length
+					to ensure a high quality set free of tangling. Non-remy hair is most popular (knows as human hair) and is readily available as well.
+					This hair has both the roots and the tips mixed up so that all the hairs are not running in the same direction.
+					This type of hair undergoes the shaving off of the cuticles or sometimes the ends of the hair.
+					This reduces the possibility of friction between hair strands and as such allows the hair to remain tangle free
+					as the name suggests. These hairs are all of the same length and are probably the best quality type of non-remy human hair
+					you can find but it is not the best hair extension you can find. Non-remy hair has undergone chemical processing. </i>
+		        </p>
+	        </div>					
+	    </div>
+		<div class= "container"><p>
+				<p>
+				<h3 id="fonted"><i>Brands</i></h3>
+				You must decide if you want a branded hair (for example Cinderella, Great Lengths Beauty Works) or non branded hair (hair bought direct from factory) with a brand name you may pay more but you have the benefit of having a company to fall back on should anything go wrong with the hair.  
+				</p>
+				<p>
+				There are many methods of attachment available. Keratin bonded hair, nano rings, taped hair or a weave. 
+				</p>
+				<p>
+				Each option has its pros and cons depending on your expectations and needs.
+				</p>
+				<p>
+				<h3 id="fonted"><i>Weave</i></h3>
+				
+				The weave is sewn into tiny rings that we attach to your hair at the root (LA Weave method) or we can sew it to a cornrow (classic method) a cornrow is a pleat that we put into your own hair at the scalp, this method is best suited to Afro hair whereas the LA version is best for European hair/scalp. 
+				</p>
+				<p>
+				Weaves come in different lengths from 14 to 22 inches, many colour variations and mixes and different qualities ranging from Human Hair, Remy Hair to Virgin Hair. 
+				</p>
+				
+				
+				<div id="WeavesCarousel" class="carousel slide">
+                
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    <div class="item active">				    
+                        <div class="row">
+												
+                            <div class="col-sm-3"><button type="button" id="carousel-img" data-toggle="modal" data-target="#myModal1" class="thumbnail"><img src="{% static 'images/weave/weave1.jpg' %}" class="img-responsive"></button>
+                            </div>
+							<div id="myModal1" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                <!-- Modal content-->
+								<div class="modal-content">
+								<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<p></p>
+								</div>
+								<div class="modal-body"> 
+								<img id="modal-img" src="{% static 'images/weave/weave1.jpg' %}" class="img-responsive">
+								</div>  
+								</div>
+								</div>
+							</div>
+                            <div class="col-sm-3"><button type="button" id="carousel-img" data-toggle="modal" data-target="#myModal2"  class="thumbnail"><img  src="{% static 'images/weave/weave2.jpg' %}" class="img-responsive"></button>
+							</div>
+							<div id="myModal2" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                <!-- Modal content-->
+								<div class="modal-content">
+								<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<p></p>
+								</div>
+								<div class="modal-body"> 
+								<img id="modal-img" src="{% static 'images/weave/weave2.jpg' %}" class="img-responsive">
+								</div>  
+								</div>
+								</div>
+							</div>
+							<div class="col-sm-3"><button type="button" id="carousel-img" data-toggle="modal" data-target="#myModal3"  class="thumbnail"><img  src="{% static 'images/weave/weave3.jpg' %}" class="img-responsive"></button>
+							</div>
+							<div id="myModal3" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                <!-- Modal content-->
+								<div class="modal-content">
+								<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<p></p>
+								</div>
+								<div class="modal-body"> 
+								<img id="modal-img" src="{% static 'images/weave/weave3.jpg' %}" class="img-responsive">
+								</div>  
+								</div>
+								</div>
+							</div>
+							<div class="col-sm-3"><button type="button" id="carousel-img" data-toggle="modal" data-target="#myModal4"  class="thumbnail"><img  src="{% static 'images/weave/weave4.jpg' %}" class="img-responsive"></button>
+							</div>
+							<div id="myModal4" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                <!-- Modal content-->
+								<div class="modal-content">
+								<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<p></p>
+								</div>
+								<div class="modal-body"> 
+								<img id="modal-img" src="{% static 'images/weave/weave4.jpg' %}" class="img-responsive">
+								</div>  
+								</div>
+								</div>
+							</div>
+                            
+                        </div>
+						
+				
+                        <!--/row-->
+                    </div>
+                    <!--/item-->
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-sm-3"><button type="button" id="carousel-img" data-toggle="modal" data-target="#myModal5" class="thumbnail"><img src="{% static 'images/weave/weave5.jpg' %}" class="img-responsive"></button>
+                            </div>
+							<div id="myModal5" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                <!-- Modal content-->
+								<div class="modal-content">
+								<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<p></p>
+								</div>
+								<div class="modal-body"> 
+								<img id="modal-img" src="{% static 'images/weave/weave5.jpg' %}" class="img-responsive">
+								</div>  
+								</div>
+								</div>
+							</div>
+                            <div class="col-sm-3"><button type="button" id="carousel-img" data-toggle="modal" data-target="#myModal6"  class="thumbnail"><img  src="{% static 'images/weave/weave6.jpg' %}" class="img-responsive"></button>
+							</div>
+							<div id="myModal6" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                <!-- Modal content-->
+								<div class="modal-content">
+								<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<p></p>
+								</div>
+								<div class="modal-body"> 
+								<img id="modal-img" src="{% static 'images/weave/weave6.jpg' %}" class="img-responsive">
+								</div>  
+								</div>
+								</div>
+							</div>
+							<div class="col-sm-3"><button type="button" id="carousel-img" data-toggle="modal" data-target="#myModal7"  class="thumbnail"><img  src="{% static 'images/weave/weave7.jpg' %}" class="img-responsive"></button>
+							</div>
+							<div id="myModal7" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                <!-- Modal content-->
+								<div class="modal-content">
+								<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<p></p>
+								</div>
+								<div class="modal-body"> 
+								<img id="modal-img" src="{% static 'images/weave/weave7.jpg' %}" class="img-responsive">
+								</div>  
+								</div>
+								</div>
+							</div>
+							<div class="col-sm-3"><button type="button" id="carousel-img" data-toggle="modal" data-target="#myModal8"  class="thumbnail"><img  src="{% static 'images/weave/weave8.jpg' %}" class="img-responsive"></button>
+							</div>
+							<div id="myModal8" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                <!-- Modal content-->
+								<div class="modal-content">
+								<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<p></p>
+								</div>
+								<div class="modal-body"> 
+								<img id="modal-img" src="{% static 'images/weave/weave8.jpg' %}" class="img-responsive">
+								</div>  
+								</div>
+								</div>
+							</div>
+                        </div>
+                        <!--/row-->
+                    </div>
+                    <!--/item-->
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-sm-3"><button type="button" id="carousel-img" data-toggle="modal" data-target="#myModal9" class="thumbnail"><img src="{% static 'images/weave/weave9.jpg' %}" class="img-responsive"></button>
+                            </div>
+							<div id="myModal9" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                <!-- Modal content-->
+								<div class="modal-content">
+								<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<p></p>
+								</div>
+								<div class="modal-body"> 
+								<img id="modal-img" src="{% static 'images/weave/weave9.jpg' %}" class="img-responsive">
+								</div>  
+								</div>
+								</div>
+							</div>
+                            <div class="col-sm-3"><button type="button" id="carousel-img" data-toggle="modal" data-target="#myModal10"  class="thumbnail"><img  src="{% static 'images/weave/weave10.jpg' %}" class="img-responsive"></button>
+							</div>
+							<div id="myModal10" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                <!-- Modal content-->
+								<div class="modal-content">
+								<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<p></p>
+								</div>
+								<div class="modal-body"> 
+								<img id="modal-img" src="{% static 'images/weave/weave10.jpg' %}" class="img-responsive">
+								</div>  
+								</div>
+								</div>
+							</div>
+							<div class="col-sm-3"><button type="button" id="carousel-img" data-toggle="modal" data-target="#myModal11"  class="thumbnail"><img  src="{% static 'images/weave/weave11.jpg' %}" class="img-responsive"></button>
+							</div>
+							<div id="myModal11" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                <!-- Modal content-->
+								<div class="modal-content">
+								<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<p></p>
+								</div>
+								<div class="modal-body"> 
+								<img id="modal-img" src="{% static 'images/weave/weave11.jpg' %}" class="img-responsive">
+								</div>  
+								</div>
+								</div>
+							</div>
+							<div class="col-sm-3"><button type="button" id="carousel-img" data-toggle="modal" data-target="#myModal12"  class="thumbnail"><img  src="{% static 'images/weave/weave12.jpg' %}" class="img-responsive"></button>
+							</div>
+							<div id="myModal12" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                <!-- Modal content-->
+								<div class="modal-content">
+								<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<p></p>
+								</div>
+								<div class="modal-body"> 
+								<img id="modal-img" src="{% static 'images/weave/weave12.jpg' %}" class="img-responsive">
+								</div>  
+								</div>
+								</div>
+							</div>
+                        </div>
+                        <!--/row-->
+                    </div>
+                <!--/carousel-inner-->
+                    <a class="left carousel-control" href="#WeavesCarousel" role="button" data-slide="prev">
+			        <span class="glyphicon glyphicon-chevron-left"></span>
+			         </a>
+			
+			         <a class="right carousel-control" href="#WeavesCarousel" role="button" data-slide="next">
+			         <span class="glyphicon glyphicon-chevron-right"></span>
+			         </a>
+                     </div>
+                
+
+
+
+
+				</div>
+				<!--/myCarousel-->
+				<p></p>
+				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="heading0ne">
+							<h4 class="panel-title">
+								<a href="#weaves" role="button" data-toggle="collapse" data-parent="accordion" aria-expanded="false"aria-controls="weaves">Weave Options</a>
+							</h4>
+						</div>
+						<div class="panel-collapse collapse" id="weaves" role="tab-panel" arialabelledby="heading0ne">
+							<div class="panel-body">
+								    <p>LA Weave - what is it?
+
+									I section off the hair, apply micro rings (these can be aluminium or copper, if you have a preferable type please ask) then I sew a piece of weft to the micro rings. This method needs refitted around every 6 weeks. Most of my clients like to have 3 double rows fitted but finer shorter hair will need 4 or 5 single rows. Often clients have heard that the weave looks bumpy on the s alp, this is not the case with my method and any of my clients will tell you they are e trebly flat to the head. When you have a consultation I'll advise you of what I think you'll need, for example how many rows and how many grams of hair. This method is most popular as you can use the same weave time and time again and you can achieve a really solid full look. (This is a guide, some people last 4 weeks, some last 12 weeks, it depends on your experience with hair extensions, how you look after them and how quickly your hair grows) The amount needed depends on your own head size, hair length and what look you are going for, natural or full and glamorous. The price depends on what brand and length of hair you opt for. I strongly advise getting a good quality weave.
+
+									How much do I charge to fit it?
+
+									£15 per single row
+									£20 per double row
+
+									Most people have 3 double rows.
+
+									When having a refit add £3 to each row price. 
+									Removal with no refit is £5 per row and £20 for a wash and blow dry. 
+									Wash and blow dry of weave £30
+									Curls £10
+									(£15 if you come to me with hair washed and dried and I'll add the curl & volume)
+									</p>
+									<br>
+								
+								
+										{% for Weave in Weaves %}
+											<div id="product">
+												<h4><i>{{ Weave.type }}</i></h4>
+												<p>{{ Weave.description|linebreaksbr }}</p>
+												{% for Weave_Price in Value_Prices %}
+													{% if Weave_Price.weave = Weave %}
+														<br>{{ Weave_Price.disc }} &nbsp;&nbsp;{{ Weave_Price.price }}
+													{% endif %}
+												{% endfor %}
+												<hr>
+											</div>
+										{% endfor %}
+										
+								
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<p>
+				<h3 id="fonted"><i>Keratin/Protein Bonds</i></h3> 
+				
+				Hair has a keratin tip, Keratin is a protein and the major component in skin, hair and nails. 
+				The keratin is heated up using a special hair extension tool and it is rolled or flat bonded onto the hair
+				at the root about an inch from the scalp.
+				This hair usually lasts around three months on average and cannot be reused after it is removed.
+				You don't need to have this hair refitted every 4-6 weeks and when looked after correctly is an excellent Choice. 
+				</p>
+				
+				<div class="row">
+												
+                            <div class="col-md-4"><button type="button" id="carousel-img" data-toggle="modal" data-target="#myModal13" class="thumbnail"><img src="{% static 'images/bonds/bonded1.jpg' %}" class="img-responsive"></button>
+                            </div>
+							<div id="myModal13" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                <!-- Modal content-->
+								<div class="modal-content">
+								<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<p></p>
+								</div>
+								<div class="modal-body"> 
+								<img id="modal-img" src="{% static 'images/bonds/bonded1.jpg' %}" class="img-responsive">
+								</div>  
+								</div>
+								</div>
+							</div>
+                            <div class="col-md-4"><button type="button" id="carousel-img" data-toggle="modal" data-target="#myModal14"  class="thumbnail"><img  src="{% static 'images/bonds/bonded2.jpg' %}" class="img-responsive"></button>
+							</div>
+							<div id="myModal14" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                <!-- Modal content-->
+								<div class="modal-content">
+								<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<p></p>
+								</div>
+								<div class="modal-body"> 
+								<img id="modal-img" src="{% static 'images/bonds/bonded2.jpg' %}" class="img-responsive">
+								</div>  
+								</div>
+								</div>
+							</div>
+							<div class="col-md-4"><button type="button" id="carousel-img" data-toggle="modal" data-target="#myModal15"  class="thumbnail"><img  src="{% static 'images/bonds/bonded3.jpg' %}" class="img-responsive"></button>
+							</div>
+							<div id="myModal15" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                <!-- Modal content-->
+								<div class="modal-content">
+								<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<p></p>
+								</div>
+								<div class="modal-body"> 
+								<img id="modal-img" src="{% static 'images/bonds/bonded3.jpg' %}" class="img-responsive">
+								</div>  
+								</div>
+								</div>
+							</div>
+				</div><!-- end of pics row -->
+				<p></p>
+				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="heading0ne">
+							<h4 class="panel-title">
+								<a href="#bonds" role="button" data-toggle="collapse" data-parent="accordion" aria-expanded="false"aria-controls="bonds">Keratin/Protein Bond Options</a>
+							</h4>
+						</div>
+						<div class="panel-collapse collapse" id="bonds" role="tab-panel" arialabelledby="heading0ne">
+							<div class="panel-body">
+								
+								<p>
+								Also known as Flat Bonds, keratin bonds, protein bonds, nail tip bonds & heated bonds. 
+								</p>
+								<p>
+								This is the classic method of attaching hair extensions. A strand of hair usually weighing 0.5 to 1 gram in weight is dipped in keratin, it dries instantly and is wrapped and sold in packs of 25 or 50 bonds. The Extensionist uses a special heat wand to reheat the keratin then attaches the heated bond about a centimetre from the root of your hair by either rolling it or flat bonding it, it cools down instantly and stays in place. This method doesn't need refitted every 6 weeks, which suits many people. I prefer this method for clients who've had extensions before and know how to look after them well. I don't advise this method for extremely fine or processed hair. If you aggressively brush these extensions they can tear your hair from the root so I strongly advise clients who choose this option to choose a high quality hair, this is also a good idea because they last so long in the head that you want hair that will still look and feel good after a few months. A typical full head is anything from 75 to 150 bonds, sometimes people want/need more. Some people like just one r two packs to add fullness to their own hair. The amount needed depends on your own head size, hair length and what look you are going for, natural or full and glamorous. They typically last between 12 to 20 weeks before needing replaced. 
+								</p>
+								<p>
+								You must choose what hair you want, Beauty Works, Cinderella, Great Lengths ect then however many bonds you want fitted, for example if you choose 100 bonds it'll be 50p per bond so £50 for fitting then the price of the hair, listed below.
+								</p>
+								<br>
+								{% for KeratinBond in KeratinBonds %}
+								<div>
+									<h4><i>{{ KeratinBond.type }}</i></h4>
+									<p>{{ KeratinBond.description|linebreaksbr }}</p>
+									<hr>
+								</div>
+								{% endfor %}	
+								<div class="well">
+								<h3>Bonds Aftercare</h3>
+
+ 
+
+									<h4>Washing</h4>
+
+									Do not wash your hair for at least 48 hours after your extensions have been fitted. The bonds need to set and this will help avoid hair shedding in the future. Wash your hair a maximum of twice a week if possible, this will put less stress on your hair. Dry shampoo can be used to freshen hair between washes. Take care when washing and brushing your extensions. When washing it is better to stand in the shower or keep your head upright in the bath when rinsing to avoid tangling or matting. Do not scrub hair on scalp, just gently run fingers between bonds when washing and rinsing. Please note it is better to use shampoos, conditioners and treatments which are designed for hair extension use. Do not use products which contain silicone. For best results after washing and conditioning squeeze the hair with a towel to soak up as much water as possible. Don't put oils onto the extensions.
+
+									 
+
+									<h4>Brushing and drying</h4>
+
+									When combing damp hair, always use a wide tooth comb. Support bonds by holding hair mid length.  When hair is damp spray in a leave in conditioner. Only use a Tangle Teezer or paddle Brush on hair extensions. Tangle Teezers are available online and in most beauty stores.
+
+									 
+
+									<h4>Styling</h4>
+
+									Blow-dry as usual avoiding too much heat on bonded areas this can weaken some bonds depending what brand you choose and can lead to shedding.
+
+									Style as usual. You can straighten, curl and brush your hair extensions as you would your natural hair. If using straighteners Ect always use heat protector or you will burn the hair. You may notice itching on the scalp when first fitted, this is normal as it takes a little time for the natural hair to adjust. After having hair extensions fitted you may find the hair shedding a little and you may even lose the odd bond; do not panic, anything from 1 to 5 is normal. Keep these safe and I will refit them during your maintenance appointment.
+
+									 
+
+									<h4>Colouring</h4>
+
+									It is not advisable to colour hair extensions. Dye contains ingredients which can weaken and break down the bonds. Hair is usually multi-tonal (espicially blonde), dye may pick up different tones and create an undesired finish. If you do wish to dye your hair extensions, always use a hairdresser who has experience/knowledge of extensions. Do not use home dying kits. I cannot be held liable for any problems you may encounter as a result of dying your extensions.
+
+									 
+
+									<h4>Sleeping</h4>
+
+									Never go to sleep with wet hair, always make sure your extensions and bonds are dry before sleeping. Sleeping on wet hair can lead to tangling and matting. It is advisable to tie your hair into loose plaits at night, this reduces the risk of tangling. 
+
+									 
+
+									<h4>Holidays/Swimming</h4>
+
+									It is not advisable to go swimming whilst wearing hair extensions. If you do, try to wear a cap, if possible. Tie your hair on top of your head. DO NOT get extension hair wet. Keep head above water, avoid diving and under water swimming. The chlorine present in pools as well as the salt present in sea along with heat can matt and the chemical within the pool can cause discoloration. Salt, pool chemicals and chlorine can cause the disintegration and break down of keratin bonds which can weakness/stickiness of your extension which can lead to matting or extensions falling out. If extensions get wet while swimming, it is advised that you dry your extensions immediately after rinsing hair out with fresh water and use a leave in conditioner. Avoid brushing wet extension hair and dry them immediately (and its recommended to let them dry out naturally) Make sure that extensions are not tangled after swimming. Again avoid sleeping with wet extensions and ensure that they have been completely dried before going to bed. Wearing your hair extensions abroad can cause dryness of the extension hair so try to keep it nourished. A deep conditioning treatment is recommended upon return.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<p>
+				<h3 id="fonted"><i>Micro Rings</i></h3> 
+				
+				The micro ring method is applied using no heat, thread or bonding agent. Using specially designed hair extension strands and rings these extensions really are next to invisible the hair. The ring is put over the top of the strand and squeezed on tight using a special plier type device. This method can be reused but harsh brushing or tugging of the hair can cause them to slide out from time to time, if this happens just keep them and they can be put back in on your next visit to the salon.
+				</p>
+				<div id="RingsCarousel" class="carousel slide">
+								<!-- Rings Carousel-->
+								<div class="carousel-inner">
+									<div class="item active">				    
+										<div class="row">
+																
+											<div class="col-sm-3"><button type="button" id="carousel-img" data-toggle="modal" data-target="#myModal17" class="thumbnail"><img src="{% static 'images/rings/rings1.jpg' %}" class="img-responsive"></button>
+											</div>
+											<div id="myModal17" class="modal fade" role="dialog">
+												<div class="modal-dialog">
+												<!-- Modal content-->
+												<div class="modal-content">
+												<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal">&times;</button>
+												<p></p>
+												</div>
+												<div class="modal-body"> 
+												<img id="modal-img" src="{% static 'images/rings/rings1.jpg' %}" class="img-responsive">
+												</div>  
+												</div>
+												</div>
+											</div>
+											<div class="col-sm-3"><button type="button" id="carousel-img" data-toggle="modal" data-target="#myModal18"  class="thumbnail"><img  src="{% static 'images/rings/rings2.jpg' %}" class="img-responsive"></button>
+											</div>
+											<div id="myModal18" class="modal fade" role="dialog">
+												<div class="modal-dialog">
+												<!-- Modal content-->
+												<div class="modal-content">
+												<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal">&times;</button>
+												<p></p>
+												</div>
+												<div class="modal-body"> 
+												<img id="modal-img" src="{% static 'images/rings/rings2.jpg' %}" class="img-responsive">
+												</div>  
+												</div>
+												</div>
+											</div>
+											<div class="col-sm-3"><button type="button" id="carousel-img" data-toggle="modal" data-target="#myModal19"  class="thumbnail"><img  src="{% static 'images/rings/rings3.jpg' %}" class="img-responsive"></button>
+											</div>
+											<div id="myModal19" class="modal fade" role="dialog">
+												<div class="modal-dialog">
+												<!-- Modal content-->
+												<div class="modal-content">
+												<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal">&times;</button>
+												<p></p>
+												</div>
+												<div class="modal-body"> 
+												<img id="modal-img" src="{% static 'images/rings/rings3.jpg' %}" class="img-responsive">
+												</div>  
+												</div>
+												</div>
+											</div>
+											<div class="col-sm-3"><button type="button" id="carousel-img" data-toggle="modal" data-target="#myModal20"  class="thumbnail"><img  src="{% static 'images/rings/rings4.jpg' %}" class="img-responsive"></button>
+											</div>
+											<div id="myModal20" class="modal fade" role="dialog">
+												<div class="modal-dialog">
+												<!-- Modal content-->
+												<div class="modal-content">
+												<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal">&times;</button>
+												<p></p>
+												</div>
+												<div class="modal-body"> 
+												<img id="modal-img" src="{% static 'images/rings/rings4.jpg' %}" class="img-responsive">
+												</div>  
+												</div>
+												</div>
+											</div>										
+										</div>							
+										<!--/row-->
+									</div>
+									<!--/item-->
+									<div class="item">
+										<div class="row">
+											<div class="col-sm-3"><button type="button" id="carousel-img" data-toggle="modal" data-target="#myModal21" class="thumbnail"><img src="{% static 'images/rings/rings5.jpg' %}" class="img-responsive"></button>
+											</div>
+											<div id="myModal21" class="modal fade" role="dialog">
+												<div class="modal-dialog">
+												<!-- Modal content-->
+												<div class="modal-content">
+												<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal">&times;</button>
+												<p></p>
+												</div>
+												<div class="modal-body"> 
+												<img id="modal-img" src="{% static 'images/rings/rings5.jpg' %}" class="img-responsive">
+												</div>  
+												</div>
+												</div>
+											</div>
+											<div class="col-sm-3"><button type="button" id="carousel-img" data-toggle="modal" data-target="#myModal22"  class="thumbnail"><img  src="{% static 'images/rings/rings6.jpg' %}" class="img-responsive"></button>
+											</div>
+											<div id="myModal22" class="modal fade" role="dialog">
+												<div class="modal-dialog">
+												<!-- Modal content-->
+												<div class="modal-content">
+												<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal">&times;</button>
+												<p></p>
+												</div>
+												<div class="modal-body"> 
+												<img id="modal-img" src="{% static 'images/rings/rings6.jpg' %}" class="img-responsive">
+												</div>  
+												</div>
+												</div>
+											</div>
+											<div class="col-sm-3"><button type="button" id="carousel-img" data-toggle="modal" data-target="#myModal23"  class="thumbnail"><img  src="{% static 'images/rings/rings7.jpg' %}" class="img-responsive"></button>
+											</div>
+											<div id="myModal23" class="modal fade" role="dialog">
+												<div class="modal-dialog">
+												<!-- Modal content-->
+												<div class="modal-content">
+												<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal">&times;</button>
+												<p></p>
+												</div>
+												<div class="modal-body"> 
+												<img id="modal-img" src="{% static 'images/rings/rings7.jpg' %}" class="img-responsive">
+												</div>  
+												</div>
+												</div>
+											</div>
+											<div class="col-sm-3"><button type="button" id="carousel-img" data-toggle="modal" data-target="#myModal24"  class="thumbnail"><img  src="{% static 'images/rings/rings8.jpg' %}" class="img-responsive"></button>
+											</div>
+											<div id="myModal24" class="modal fade" role="dialog">
+												<div class="modal-dialog">
+												<!-- Modal content-->
+												<div class="modal-content">
+												<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal">&times;</button>
+												<p></p>
+												</div>
+												<div class="modal-body"> 
+												<img id="modal-img" src="{% static 'images/rings/rings8.jpg' %}" class="img-responsive">
+												</div>  
+												</div>
+												</div>
+											</div>
+										</div>
+										<!--/row-->
+									</div>
+									<!--/item-->
+									
+									<!--/carousel-inner-->
+									<a class="left carousel-control" href="#RingsCarousel" role="button" data-slide="prev">
+									<span class="glyphicon glyphicon-chevron-left"></span>
+									 </a>
+							
+									 <a class="right carousel-control" href="#RingsCarousel" role="button" data-slide="next">
+									 <span class="glyphicon glyphicon-chevron-right"></span>
+									 </a>
+								</div>
+								
+				</div>
+				<!-- /Rings Carousel-->
+				
+				<p></p>
+				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="heading0ne">
+							<h4 class="panel-title">
+								<a href="#rings" role="button" data-toggle="collapse" data-parent="accordion" aria-expanded="false"aria-controls="rings">Micro Ring Options</a>
+							</h4>
+						</div>
+						<div class="panel-collapse collapse" id="rings" role="tab-panel" arialabelledby="heading0ne">
+							<div class="panel-body">
+								
+								<p>
+								I do many different options within this method, nano rings, ultra bonds and mini tips,
+								they are all the same idea. A tiny ring (can be aluminium or copper, please state a preference if you have one)
+								is placed over a stick tip/flat bond and clamped shut.
+								These will stay in place but if brushed to aggressively can slip out,
+								they are usually advertised as being kinder to the hair due to the no use of heat,
+								thread or chemicals but in my opinion if looked after correctly no method of hair extension application is damaging.
+								This option is fairly discreet and reusable. They usually need refitted around every 6 weeks.
+								(This is a guide, some people last 4 weeks, some last 12 weeks, it depends on your experience with hair extensions,
+								how you look after them and how quickly your hair grows).
+								When you come for a consultation I will advise you of how much hair you need.
+								A typical full head is anything from 75 to 150 bonds, sometimes people ant/need more.
+								The amount needed depends on your own head size, hair length and what look you are going for, natural or full and glamorous.
+								Some people get one or two packs just to add fullness to their own hair. The price depends on what brand you go for.
+								I strongly advise choosing a good quality brand of hair.
+								</p>
+								<p>
+								This is what I charge for the fitting of your extensions,
+								it includes the ring and the cut and style once all the extensions have been fitted.
+								</p>
+								
+								<p></p>
+								{% for MicroRing in MicroRings %}
+								<div>
+									<h4><i>{{ MicroRing.type }}</i></h4>
+									<p>{{ MicroRing.description|linebreaksbr }}</p>
+									<hr>
+								</div>
+								{% endfor %}
+								<p>
+								For example,
+								if you had 100 bonds of crown couture fitted in 18 inch mixed blonde hair you'd be  £248
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<p>
+				<h3 id="fonted"><i>Taped Hair Extensions</i></h3>
+				
+				Tapes are strips of hair usually about 2 inches or bigger in diameter, the top of the strip of hair has a sticky tape attached, we place this at the root of your hair and we sandwich another strip on top of it to create a seamless undetectable look allowing your own hair to grow out while wearing these extensions. They need retaped with fresh tape every 6 weeks or so and can be reused. 
+				</p>
+				
+				<div class="row">
+												
+                            <div class="col-sm-3"><button type="button" id="carousel-img" data-toggle="modal" data-target="#myModal25" class="thumbnail"><img src="{% static 'images/tapes/tapes1.jpg' %}" class="img-responsive"></button>
+                            </div>
+							<div id="myModal25" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                <!-- Modal content-->
+								<div class="modal-content">
+								<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<p></p>
+								</div>
+								<div class="modal-body"> 
+								<img id="modal-img" src="{% static 'images/tapes/tapes1.jpg' %}" class="img-responsive">
+								</div>  
+								</div>
+								</div>
+							</div>
+                            <div class="col-sm-3"><button type="button" id="carousel-img" data-toggle="modal" data-target="#myModal26"  class="thumbnail"><img  src="{% static 'images/tapes/tapes2.jpg' %}" class="img-responsive"></button>
+							</div>
+							<div id="myModal26" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                <!-- Modal content-->
+								<div class="modal-content">
+								<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<p></p>
+								</div>
+								<div class="modal-body"> 
+								<img id="modal-img" src="{% static 'images/tapes/tapes2.jpg' %}" class="img-responsive">
+								</div>  
+								</div>
+								</div>
+							</div>
+							<div class="col-sm-3"><button type="button" id="carousel-img" data-toggle="modal" data-target="#myModal27"  class="thumbnail"><img  src="{% static 'images/tapes/tapes3.jpg' %}" class="img-responsive"></button>
+							</div>
+							<div id="myModal27" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                <!-- Modal content-->
+								<div class="modal-content">
+								<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<p></p>
+								</div>
+								<div class="modal-body"> 
+								<img id="modal-img" src="{% static 'images/tapes/tapes3.jpg' %}" class="img-responsive">
+								</div>  
+								</div>
+								</div>
+							</div>
+							<div class="col-sm-3"><button type="button" id="carousel-img" data-toggle="modal" data-target="#myModal28"  class="thumbnail"><img  src="{% static 'images/tapes/tapes4.jpg' %}" class="img-responsive"></button>
+							</div>
+							<div id="myModal28" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                <!-- Modal content-->
+								<div class="modal-content">
+								<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<p></p>
+								</div>
+								<div class="modal-body"> 
+								<img id="modal-img" src="{% static 'images/tapes/tapes4.jpg' %}" class="img-responsive">
+								</div>  
+								</div>
+								</div>
+							</div>
+				</div><!-- end of pics row -->
+						
+				<p></p>	
+				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="heading0ne">
+							<h4 class="panel-title">
+								<a href="#taped" role="button" data-toggle="collapse" data-parent="accordion" aria-expanded="false"aria-controls="taped">Taped Hair Options</a>
+							</h4>
+						</div>																			
+						<div class="panel-collapse collapse" id="taped" role="tab-panel" arialabelledby="heading0ne">
+							<div class="panel-body">
+								
+								<p>
+								This is 2-inch wefts of hair with a sticky top attached under a section of your hair with another strip placed on top 
+								like a sandwich. They look seamless and feel comfortable,but as the hair grows some people complain that the corners can 
+								curl up or that the tapes can become more noticeable when the hair is up. A good point is that when tuning your hands 
+								over the scalp they can't be felt. They need to be refitted every 4 to 8 weeks in my experience, depending on how quickly 
+								your own hair grows. When you come for a refit each tape has to be removed, the old tape should be taken off and replaced 
+								with new tape and the natural hair always needs to be washed thoroughly as the tapes leave a sticky residue on the hair. 
+								Once washed and dried the retaped hair can be refitted to your hair again. They are reusable but in my experience after 3 
+								refits they can't be used again. It's a quick and easy first fitting but the refit can be a lengthy process. Most people 
+								need 3 to 4 packs for a full head although some people get 2 packs for thickness in their already long hair.
+								</p>
+								<br>
+								{% for TapedHairExtention in TapedHairExtentions %}
+								<div>
+									<h4><i>{{ TapedHairExtention.type }}</i></h4>
+									<p>{{ TapedHairExtention.description|linebreaksbr }}</p>
+									<hr>
+								</div>
+								{% endfor %}
+								<p>
+								Usually 3 or 4 packs is a full head, one or two packs can be used to add colour or fullness.
+								</p>
+								<p>
+								So if you get 3 packs it will be £45 and so on. 
+								</p>
+								<p>
+								When it comes to reusing your taped hair extensions I use a solution to break down the bond between the taped hair wefts, 
+								I remove them, wipe away any existing tape and retape the wefts with fresh tape, I then move them to nearer the top of 
+								the hair and apply them once again for another 6 weeks, you can repeat this process for 9 months. In between removal and 
+								retaping it's advisable to have a wash and blowdry of your natural hair to remove any solution before refitting the taped 
+								hair once more.
+								</p>
+								
+								<div class="well">
+								<h5>Product Details:</h5>
+								<ul>
+									<li>Pure Virgin Cuticle Hair 
+									<li>Hand Crafted
+									<li>40g – 8 pieces per pack 
+									<li>Length 20”
+									<li>Invisible Weft technology
+									<li>Pre-Taped 
+									<li>Re-usable. Simply remove old tape and add new tape for a new wear
+									<li>Each strip is 1.5" wide
+									<li>3-4 packs needed for a full application
+									<li>Professional Application Only
+								</ul>
+								<p></p>
+								<div class="col-md-12"><img  src="{% static 'images/tapes/tapesx.jpg' %}" class="img-responsive">
+								</div>
+								<br><br>
+								<p>
+								The Invisi®-Tape virtually disappears into the hairline, offering an even more natural blend than other tape extensions. 
+								This innovative design blends seamlessly into the hairline. The invisible weft technology is made on an extremely thin, 
+								silk base crafted by hand, the weft mimics the natural re-growth at the root for complete discretion. With multiple salon 
+								applications, Invisi®-Tape can be re-used.
+								</p>
+								</div>
+								
+								<p>
+								<h4>THE HAIR EXPERIENCE YOU HAVE BEEN WAITING FOR:</h4>
+								</p>
+								<p>
+								<b>High Quality Remy Hair</b> - Using genuine European hair that goes through a stage-bystage process to ensure beautifully 
+								crafted hair extensions. Sourced from genuine virgin ponytails, the hair is hand-selected from the healthiest Virgin 
+								human hair.
+								</p>
+								<p>
+								<b>Double Drawn</b> - Shorter hairs are removed by hand, leaving perfectly uniform hair to create thicker, fuller hair from root 
+								to tip.
+								</p>
+								<p>
+								<b>New Technology</b> - Using organic pigments to create our unique colour combinations, each strand is hand processed offering 
+								long lasting shine and brilliant colour.
+								</p>
+								<p>
+								<b>Cuticle Retained</b> – Our gentle formula ensures the cuticle remains on the hair shaft giving the hair its natural shine and 
+								protecting the hair’s core structure.
+								</p>
+								<p>
+								Our unique process guarantees high quality hair extensions.
+								</p>
+								
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<h2 id="fonted"><i>General Advice on Extentions</i></h2>
+				<br>
+				<div class="well">
+				<p>
+				<h4>Tip:</h4>
+				
+				I advise my clients NOT to chemically treat their hair extensions, NOT to allow anyone other than a qualified experienced hair extensionist to cut them and to use the shampoo and conditioner I recommend depending on the brand/method you choose. Always use heat protector of you choose to use heat styling tools on your hair. Do NOT use oils on hair extensions or heavy treatments or you can end up with a build up on them that will cause them to become difficult to manage. Going on holiday with extensions is harsh on them and will wear them out quicker. This in my opinion is due to the water you wash your hair with when abroad, being in and out of the pool, the sea, the sun drying them out and even bleaching them plus the atmosphere at night causing them to be difficult. 
+				</p>
+				</div>
+				<p>
+				<h4>Preferred Brands</h4> 
+				
+				My favourite brand differs depending on what attachment method you choose. 
+				</p>
+				<p>
+				<i><b>For keratin bonds</b></i>
+				</p>
+				<p>
+				the best hair extensions in my experience is Cinderella hair. I have been working with this brand for many years and have never had a complaint about it. Cinderella Hair extensions are 100% Remy Human Hair, they only use the finest the Protein Moulded Bonds (PMB) which are formed from Keratin, this ensures that there is no damage to your own hair. All Cinderella Hair Extensions are cuticle correct to avoid tangling and the whole hair extension range is ethically sourced. It comes in straight or Bodywave and in 16 to 22 inches in length. 
+				</p>
+				<p>
+				I also offer Beauty Works pre bonded range and a non branded human hair option for people on a budget. 
+				</p>
+				<p>
+				<i><b>Nano rings</b></i>
+				</p>
+				<p>
+				Easilocks. A celebrity favourite, virtually undetectable to the eye and extremely comfortable to wear, sleep, wear hair up and style in any way you like! Only the highest grade of hair quality is used for their natural cuticle-correct hair Remy Hair. 
+				</p>
+				<p>
+				I also offer Beauty Works Nano Rings and a non branded option for people on a budget. 
+				</p>
+				<p>
+				<i><b>Weave</b></i>
+				</p>
+				<p>
+				Beauty works Jen Aitkin Range is my personal favourite weft to weave in. I find the hair never seems to get tuggy and is very easy to manage. Jen Aitkin is the Kardashians stylist and they use this hair.  
+				</p>
+				<p>
+				I also offer Beauty Works human hair weaves in celebrity choice 120gram and gold choice 150 gram. 
+				</p>
+				<p>
+				A non branded human hair weave is also available in human hair, Remy hair and virgin hair. 
+				</p>				
+				<p>
+				<i><b>Tapes</b></i> 
+				</p>
+				<p>
+				Beauty Works Jen Aitkin Range, this is the same hair used in the wefts and is fantastic quality. Reusable and undetectable. Easilocks also offer Easitapes and they are just as good! 
+				</p>
+				<p>
+				I also offer Rapture Taped Extensions.
+				</p>
+				<div class="well">
+					<p>
+					<h4>Hair Extension Choices:</h4>
+					Consultation is free. When you decide what metho  of attachment and what brand you want Ashley will ask you exactly what you expect from your extensions and then be able to tell you how much it will be. The price depends on the amount of hair needed to achieve what you want, the colours needed to match your own hair, and the length you choose. 
+					</p>
+					<p>
+					Hair Extensions can be used to thicken up your own hair or thicken, add length and volume. They can be used to turn a short do into a bob style or to create a fringe. The possibilities are endless. 
+					</p>
+					<p>
+					To arrange a consultation with Ashley refer to the <a href="{% url 'contact' %}"><i>Contact</i></a> page
+					</p>
+				</div>
+		</div>
+		
+		<div class="content container">
+		    <div class="row">
+			    <div class="col-lg-12">
+				
+	     
+		
+		
+	 
+			    </div>
+			</div>	
+		</div>
+		
+		
+	</div>
+	
+
+
+
+
+
+    <div class="footer">
+        <p><b>&copy; &nbsp;University of Dundee</b></p>
+    </div>  
+
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+

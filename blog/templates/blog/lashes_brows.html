@@ -1,0 +1,103 @@
+{% load staticfiles %}
+<html>
+
+<head>
+<title>Brows</title>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+</head>
+
+
+<body>
+
+<header class="bgimage">
+    <div class="container">
+	    <div class="titled hidden-xs" >
+	    
+	    </div>
+	</div>
+</header>	
+
+
+<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="80">
+    <div class="container">
+	    <div class="navbar-header">
+		    <button type="button"
+			class="navbar-toggle collapsed"
+			data-toggle="collapse"
+			data-target="#collapsedmenu"
+			aria-expanded="false">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
+	        <a href="#" class="navbar-brand">
+		       <i>The Glamour Lounge</i>
+		    </a>
+		</div>
+		<div class="collapse navbar-collapse" id="collapsedmenu"> 
+		    <ul class="nav navbar-nav">
+		        <li><a href="{% url 'post_list' %}">Home</a></li>
+			    <li><a href="{% url 'hair_extentions' %}">Hair Extentions</a></li>
+			    <li><a href="{% url 'make_up' %}">Make up</a></li>
+				<li  class="active"><a href="{% url 'lashes_brows' %}">Brows & Lashes</a></li>
+				<li><a href="{% url 'nails' %}">Nails</a></li>
+				<li><a href="{% url 'hairdressing' %}">Hairdressing</a></li>
+				<li><a href="{% url 'price_list' %}">Price List</a></li>
+				<li><a href="{% url 'contact' %}">Contact</a></li>
+		    </ul>
+		</div>
+	</div>
+</nav>
+
+
+
+    <div class="container" id="wrapper">   	
+		<h2 id="fonted"><i> &nbsp;&nbsp; Brows and Lashes</i></h2>
+        
+		
+		
+		<div class="container">
+			<div class="col-md-12">
+			
+				<br><br>
+				<img src="{% static 'images/brows/brows1.jpg' %}" class="img-responsive" id="mid">
+				<br><br>
+			</div>	
+			<div class="row">
+				<div class="col-sm-6">
+				
+				{% for Lash_Brow in Lashes_Brows %}
+					<div>
+						<h4><i>{{ Lash_Brow.type }}</i></h4>
+						<p>{{ Lash_Brow.description|linebreaksbr }}</p>
+						<hr>
+					</div>
+				{% endfor %}
+				</div>
+				<div class="col-sm-6">
+				<img  src="{% static 'images/brows/brows2.jpg' %}" class="img-responsive">
+		
+		
+		
+				</div>			
+			</div>
+			<br><br><br>
+		</div>
+		
+	</div>
+    <div class="footer">
+        <p><b>&copy; &nbsp;University of Dundee</b></p>
+    </div>  
+
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+

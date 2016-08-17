@@ -1,0 +1,182 @@
+body {
+	
+	background: url('../images/floral_pattern3.jpg');
+}
+
+
+h1 {
+	
+    color: red;
+	font-family: lobster;
+	font-weight: bold;
+	font-style: italic;
+	
+}
+
+#contact-us{
+	
+	text-align: left;
+}
+
+#contact-us2{
+	
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#contact-button1{
+	
+	height: 50px;
+	width: 50px;
+	display:inline;
+}
+
+
+#contact-button2{
+	
+	height: 50px;
+	width: 50px;
+	display:inline;
+}
+
+#contact-button2:hover{
+	
+	transform: scale(0.9);
+}
+
+
+#centered{
+	
+	margin-left: auto;
+    margin-right: auto;
+	
+}
+
+#home_photo{
+	
+	margin-left: auto;
+    margin-right: auto;
+	
+}
+
+
+.footer{
+	
+	text-align: center;
+	width: 100%;
+	color: white;
+}
+
+#wrapper{
+	padding-right: 0px;
+	padding-left: 0px;
+	background-color: white;
+	margin: 40 auto;
+	border-style: solid;
+	border-width: 4px 0px 4px 0px;
+	border-color: #91240d;
+}
+.thumbnail{
+	
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.carousel-control {
+	
+  margin: 0 0 0 0;
+  padding-top:10%;
+  padding-bottom:10%
+  
+}
+
+.titled {
+	
+	width: 399px;
+	height: 70px;
+	background-image: url('../images/logo.png');
+	margin-top: 8px;
+}
+
+.bgimage {
+	margin-top: 0;
+	width: 100%;
+	background-image: url('../images/Stripes2.jpg');
+	background-position: center center;
+	background-size: cover;
+	height: 80px;
+	
+}
+
+.navbar-inverse  {
+	vertical-align: top;
+	margin-top: 0;
+	width: 100%;
+	z-index: 100;
+}
+
+.affix {
+      top: 0px;
+  }
+  
+.flower{
+	height: 800px;
+	background: url('../images/flowers.jpg');
+	
+}
+
+#priceListMenu{
+	background-color: black;
+	color: white;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+#carousel-img:hover {opacity: 0.7;}
+
+#modal-img{
+	margin-left: auto;
+    margin-right: auto;
+}
+
+#mid{
+	
+	margin: 0 auto;
+    float: none;
+}
+
+#menu{
+	
+	background-color: black;
+	color: white;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+#centered{
+	margin-left: auto;
+    margin-right: 15;
+}
+
+@font-face {
+    font-family: blocksprint;
+    src: url(BlockSprint.ttf);
+	font-weight: bold;
+}
+
+.nav{
+	font-family: blocksprint;
+	font-weight: bold;
+}
+
+#fonted{
+	font-family: blocksprint;
+	font-weight: bold;
+}
+
+#fonted-text{
+	font-family: blocksprint;
+}
+

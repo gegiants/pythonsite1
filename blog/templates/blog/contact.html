@@ -1,0 +1,159 @@
+{% load staticfiles %}
+<html>
+
+<head>
+<title>Contact</title>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+</head>
+
+
+<body>
+
+<header class="bgimage">
+    <div class="container">
+	    <div class="titled hidden-xs" >
+	    
+	    </div>
+	</div>
+</header>	
+
+
+<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="80">
+    <div class="container">
+	    <div class="navbar-header">
+		    <button type="button"
+			class="navbar-toggle collapsed"
+			data-toggle="collapse"
+			data-target="#collapsedmenu"
+			aria-expanded="false">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
+	        <a href="#" class="navbar-brand">
+		       <i>The Glamour Lounge</i>
+		    </a>
+		</div>
+		<div class="collapse navbar-collapse" id="collapsedmenu"> 
+		    <ul class="nav navbar-nav">
+		        <li><a href="{% url 'post_list' %}">Home</a></li>
+			    <li><a href="{% url 'hair_extentions' %}">Hair Extentions</a></li>
+			    <li><a href="{% url 'make_up' %}">Make up</a></li>
+				<li><a href="{% url 'lashes_brows' %}">Brows & Lashes</a></li>
+				<li><a href="{% url 'nails' %}">Nails</a></li>
+				<li><a href="{% url 'hairdressing' %}">Hairdressing</a></li>
+				<li><a href="{% url 'price_list' %}">Price List</a></li>
+				<li  class="active"><a href="{% url 'contact' %}">Contact</a></li>
+		    </ul>
+		</div>
+	</div>
+</nav>
+
+
+    <div class="container" id="wrapper">   	
+		<h2 id="fonted"><i> &nbsp;&nbsp; Contact us</i></h2>
+		<br><br>
+		<div class="container">
+		
+		<div class="row">
+			<div class="col-md-4" id="contact-us">
+			    <div class="media">
+			    <div class="media-middle">
+				  <img class="img-responsive" id="contact-button1" src="../../static/buttons/phone-icon2.png"> &nbsp; <b><i>01382450501</i></b>
+			    </div>
+			    </div>
+				<br>
+			</div>
+			
+			<div class="col-md-4" id="contact-us">
+			    <div class="media">
+			    <div class="media-middle">
+				<img class="img-responsive" id="contact-button1" src="../../static/buttons/mobile-icon.png"> &nbsp; <b><i>07568316733</i></b>
+				</div>
+			    </div>
+				<br>
+			</div>
+			
+			<div class="col-md-4" id="contact-us">
+			    <div class="media">
+			    <div class="media-heading">
+				<img class="img-responsive" id="contact-button1" src="../../static/buttons/email-icon.png"> <b><i>mrsashleyhutton@gmail.com</i></b>
+				</div>
+			    </div>
+				<br>
+			</div>
+        	
+		<br><br>
+        
+			<div class="col-md-4" id="contact-us">
+			    <div class="media">
+			    <div class="media-middle">
+				<a href="//www.facebook.com/glamourdundee"><img class="img-responsive" id="contact-button2" src="../../static/buttons/facebook-icon.png"></a> &nbsp; <b><i>Find us on Facebook</i></b>
+				</div>
+			    </div>
+				<br>
+			</div>
+			
+			<div class="col-md-4" id="contact-us">
+			    <div class="media">
+			    <div class="media-middle">
+				<a href="//twitter.com/glamourdundee"><img class="img-responsive" id="contact-button2" src="../../static/buttons/twitter-icon.png"></a> &nbsp; <b><i>Follow us on Twitter</i></b>
+				</div>
+			    </div>
+				<br>
+			</div>
+			
+			<div class="col-md-4" id="contact-us">
+			    <div class="media">
+			    <div class="media-middle">
+				<a href="//www.instagram.com/ladymukmua/"><img class="img-responsive" id="contact-button2" src="../../static/buttons/instagram-icon.png"></a> &nbsp; <b><i>Follow us on Instagram</i> </b><br>
+				</div>
+			    </div>
+				
+			</div>
+        </div>
+        <br><br>		
+		<div class="row">
+		<div class="col-sm-12" id="contact-us2">
+		
+        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:500px;width:500px;'><div id='gmap_canvas' style='height:500px;width:500px;'></div><div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div><div><small><a href="https://privacypolicygenerator.info">privacy policy generator</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:11,center:new google.maps.LatLng(56.47332842291681,-2.957767020129378),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(56.47332842291681,-2.957767020129378)});infowindow = new google.maps.InfoWindow({content:'<strong>The Glamour Lounge</strong><br>Dundee, 49 Baldovan Terrace<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+		</div>
+		</div>
+		</div>
+		<br><br><br>
+		  
+			
+	
+
+
+
+
+
+
+
+		  
+		 
+	</div>
+	
+
+	
+        <div class="footer">
+            <p><b>&copy; &nbsp;University of Dundee</b></p>
+        </div>  
+
+
+
+	
+
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+
+</html>
