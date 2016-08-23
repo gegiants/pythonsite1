@@ -123,7 +123,7 @@
 
 							</div>
 							<div class="col-sm-8">
-								<p>* Please book an appointment and discuss details with Ashley before proceeding...</p>
+								<p>* Please book an appointment and discuss details before proceeding to make a deposit...</p>
 							</div>
 						</div>
 					</div>
@@ -145,12 +145,7 @@
 									
 									<div class="col-sm-4">
 										<h4><i>{{ Weave.type }}</i></h4>
-										<p>{{ Weave.description|linebreaksbr }}</p>
-										{% for Weave_Price in Value_Prices %}
-											{% if Weave_Price.weave = Weave %}
-												<br>{{ Weave_Price.disc }} &nbsp;&nbsp;{{ Weave_Price.price }}
-											{% endif %}
-										{% endfor %}
+										<p>{{ Weave.description|linebreaksbr }}</p>									
 												
 									</div>
 									{%  if forloop.counter|divisibleby:3 %}

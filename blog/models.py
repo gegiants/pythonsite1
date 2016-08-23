@@ -27,30 +27,14 @@ class Weave(models.Model):
 	description = models.TextField()
 	
 	def __str__(self):
-		return self.type
-		
-class Weave_Price(models.Model):
-	disc = models.CharField(max_length=200)
-	weave = models.ForeignKey(Weave, on_delete=models.CASCADE)	
-	price = models.IntegerField()
-	
-	def __str__(self):
-		return "%s - %s" % (self.weave, self.disc)
+		return self.type		
 		
 class KeratinBond(models.Model):
 	type = models.CharField(max_length=200,primary_key=True)
 	description = models.TextField()
 	
 	def __str__(self):
-		return self.type
-
-class KeratinBond_Price(models.Model):
-	disc = models.CharField(max_length=200)
-	weave = models.ForeignKey(Weave, on_delete=models.CASCADE)	
-	price = models.IntegerField()
-	
-	def __str__(self):
-		return "%s - %s" % (self.weave, self.disc)		
+		return self.type		
 				
 class MicroRing(models.Model):
 	type = models.CharField(max_length=200,primary_key=True)
@@ -58,14 +42,6 @@ class MicroRing(models.Model):
 	
 	def __str__(self):
 		return self.type
-
-class MicroRing_Price(models.Model):
-	disc = models.CharField(max_length=200)
-	microRing = models.ForeignKey(MicroRing, on_delete=models.CASCADE)	
-	price = models.IntegerField()
-
-	def __str__(self):
-		return "%s - %s" % (self.microRing, self.disc)
 		
 class TapedHairExtention(models.Model):
 	type = models.CharField(max_length=200,primary_key=True)
@@ -73,14 +49,6 @@ class TapedHairExtention(models.Model):
 	
 	def __str__(self):
 		return self.type
-		
-class TapedHairExtention_Price(models.Model):
-	disc = models.CharField(max_length=200)
-	weave = models.ForeignKey(Weave, on_delete=models.CASCADE)	
-	price = models.IntegerField()
-	
-	def __str__(self):
-		return "%s - %s" % (self.weave, self.disc)
 		
 class MakeUp(models.Model):
 	type = models.CharField(max_length=200,primary_key=True)
@@ -109,16 +77,7 @@ class Hairdressing(models.Model):
 	
 	def __str__(self):
 		return self.type		
-		
-class Pricee(models.Model):
-	type = models.CharField(max_length=200)
-	content_type = models.ForeignKey(ContentType, on_delete=models.CASCADE)
-	object_id = models.PositiveIntegerField()
-	content_object = GenericForeignKey('content_type', 'object_id')
-	price = models.IntegerField()
-	
-	def __str__(self):
-		return self.type		
+			
 
 
 		
